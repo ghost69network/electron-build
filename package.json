@@ -13,7 +13,6 @@
   "build": {
     "appId": "com.example.electronbuild",
     "productName": "ElectronBuildApp",
-    "publish": "never",
     "directories": {
       "output": "dist"
     },
@@ -26,7 +25,9 @@
       "target": [
         {
           "target": "nsis",
-          "arch": ["x64"]
+          "arch": [
+            "x64"
+          ]
         }
       ]
     }
