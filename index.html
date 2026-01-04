@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Electron Build</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+<div class="wrap">
+    <h1>Electron-додаток успішно зібрано</h1>
+    <p>Це мінімальний інтерфейс для перевірки режиму розробки та збірки інсталятора.</p>
+    <button id="btn">Натисни мене</button>
+    <div id="out" class="out">Очікую дію...</div>
+</div>
+
+<script>
+    const btn = document.getElementById('btn');
+    const out = document.getElementById('out');
+
+    btn.addEventListener('click', () => {
+        const now = new Date();
+        out.textContent = 'Кнопка натиснута: ' + now.toLocaleString('uk-UA');
+    });
+</script>
+</body>
+</html>
